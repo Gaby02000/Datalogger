@@ -1,18 +1,3 @@
-/* REVISION HISTORY:
-*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Author            Date      Comments on this revision
-*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Ricardo López    11/6/10  UART2C module interrupt handler
-* Marcelo Gómez    09/03/14 Portado a MPLAB.X
-* Marcelo Gómez    20/05/15 Portado a MPLAB.X
-* Sebastián Wahler 04/06/19 Simplificado
-*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*
-* ADDITIONAL NOTES:
-*
-*
-**********************************************************************/
-
 #include "p33FJ256GP710.h"
 #include "config.h"
 #include "common.h"
@@ -204,7 +189,7 @@ void __attribute__((interrupt, auto_psv)) _U2RXInterrupt( void )
 }
 }           
 
-//Rutina de INT para transmisión (no hace nada)
+//Rutina de INT para transmisiÃ³n (no hace nada)
 void __attribute__((interrupt, auto_psv)) _U2TXInterrupt(void)
 {
     if(estado==2) {    //transmite el paquete 
