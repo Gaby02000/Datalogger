@@ -1,9 +1,3 @@
-/* 
- * File:   confbits.h
- * Author: marcelo
- *
- * Created on March 9, 2014, 10:05 PM
- */
 
 #ifndef CONFBITS_H
 #define	CONFBITS_H
